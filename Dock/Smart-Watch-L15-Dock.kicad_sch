@@ -158,7 +158,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 10.16 -6.35 180)
 					(length 5.08)
 					(name "GND"
@@ -212,7 +212,7 @@
 						)
 					)
 				)
-				(pin power_out line
+				(pin passive line
 					(at 10.16 -8.89 180)
 					(length 5.08)
 					(name "GND"
@@ -1231,8 +1231,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at -9.398 15.24 0)
+			(property "Reference" "P2"
+				(at -8.89 15.494 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1242,7 +1242,7 @@
 				)
 			)
 			(property "Value" "ARM JTAG/SWD"
-				(at 8.128 15.24 0)
+				(at -1.778 -3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1251,7 +1251,7 @@
 					)
 				)
 			)
-			(property "Footprint" "CON10_2X5_DUK_FTSH_SAI"
+			(property "Footprint" "1_I-SYST_inc:CON10_2X5_DUK_FTSH_SAI-M"
 				(at 2.286 -4.826 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1367,7 +1367,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -15.24 8.89 0)
 					(length 5.08)
 					(name "GND"
@@ -1403,7 +1403,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at -15.24 6.35 0)
 					(length 5.08)
 					(name "GND"
@@ -2767,7 +2767,7 @@
 	)
 	(text "Cortex Debug Connector"
 		(exclude_from_sim no)
-		(at 137.668 112.014 0)
+		(at 132.588 112.014 0)
 		(effects
 			(font
 				(size 1.905 1.905)
@@ -2776,13 +2776,19 @@
 		(uuid "e61d0b5f-74e5-44db-8903-07a84f5323e3")
 	)
 	(junction
-		(at 114.3 129.54)
+		(at 87.63 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "163d1e99-3217-4deb-9c03-515acd9a6fc4")
+	)
+	(junction
+		(at 109.22 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2bdb7aaf-4904-4fb5-97b9-a2b87b6384b1")
 	)
 	(junction
-		(at 114.3 124.46)
+		(at 109.22 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a484188-598c-453a-bf45-24aad2c83dd3")
@@ -2811,16 +2817,22 @@
 		(color 0 0 0 0)
 		(uuid "fca65423-a9a1-41ad-8a2d-069123236bd7")
 	)
+	(junction
+		(at 85.09 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffba8a8c-e5a5-48cd-9b19-b6eadbb73ce8")
+	)
 	(no_connect
-		(at 152.4 127)
+		(at 147.32 127)
 		(uuid "156cef50-f9c1-459e-b8c4-38436bc21615")
 	)
 	(no_connect
-		(at 152.4 124.46)
+		(at 147.32 124.46)
 		(uuid "5fa9166f-675a-4752-a5ca-92fefdadaed1")
 	)
 	(no_connect
-		(at 115.57 127)
+		(at 110.49 127)
 		(uuid "9d13f48c-918c-4151-83a6-b56009897704")
 	)
 	(wire
@@ -2875,13 +2887,23 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 119.38) (xy 114.3 119.38)
+			(xy 110.49 119.38) (xy 109.22 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "253af8f9-e91e-4ad9-8f2d-5cd033caf52b")
+	)
+	(wire
+		(pts
+			(xy 85.09 71.12) (xy 87.63 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27c05051-e993-4f94-9341-8db0b7c60374")
 	)
 	(wire
 		(pts
@@ -2905,7 +2927,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 124.46) (xy 114.3 129.54)
+			(xy 109.22 124.46) (xy 109.22 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2922,6 +2944,16 @@
 			(type default)
 		)
 		(uuid "3a9fc5c3-e44c-47c6-8477-9f2a2c41e2ec")
+	)
+	(wire
+		(pts
+			(xy 87.63 86.36) (xy 87.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f52e12e-9be4-4600-a2f8-06bd33e9fbf8")
 	)
 	(wire
 		(pts
@@ -2955,7 +2987,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 124.46) (xy 114.3 121.92)
+			(xy 109.22 124.46) (xy 109.22 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2965,7 +2997,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 71.12) (xy 87.63 71.12)
+			(xy 81.28 71.12) (xy 85.09 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2985,7 +3017,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 129.54) (xy 165.1 129.54)
+			(xy 147.32 129.54) (xy 160.02 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3015,7 +3047,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 114.3) (xy 114.3 119.38)
+			(xy 109.22 114.3) (xy 109.22 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3025,7 +3057,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 129.54) (xy 114.3 134.62)
+			(xy 109.22 129.54) (xy 109.22 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3085,7 +3117,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 124.46) (xy 114.3 124.46)
+			(xy 110.49 124.46) (xy 109.22 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3105,7 +3137,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 121.92) (xy 165.1 121.92)
+			(xy 147.32 121.92) (xy 160.02 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3125,7 +3157,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 119.38) (xy 165.1 119.38)
+			(xy 147.32 119.38) (xy 160.02 119.38)
 		)
 		(stroke
 			(width 0)
@@ -3215,7 +3247,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 129.54) (xy 115.57 129.54)
+			(xy 109.22 129.54) (xy 110.49 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3225,7 +3257,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 121.92) (xy 115.57 121.92)
+			(xy 109.22 121.92) (xy 110.49 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3294,7 +3326,7 @@
 		(uuid "fb91a3c8-f228-460e-8003-9b6959f29ce0")
 	)
 	(label "SWDCLK"
-		(at 165.1 121.92 180)
+		(at 160.02 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3314,7 +3346,7 @@
 		(uuid "3f86ab27-29ae-4cb0-b278-1ee8149886d3")
 	)
 	(label "nRESET"
-		(at 165.1 129.54 180)
+		(at 160.02 129.54 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3334,7 +3366,7 @@
 		(uuid "7633e845-1260-41a9-bc5e-54c74f86c6fe")
 	)
 	(label "SWDIO"
-		(at 165.1 119.38 180)
+		(at 160.02 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3477,7 +3509,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 87.63 86.36 0)
+		(at 87.63 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3487,7 +3519,7 @@
 		(dnp no)
 		(uuid "1bc60b30-033d-4a18-9355-6edcd39f98ed")
 		(property "Reference" "#PWR02"
-			(at 87.63 92.71 0)
+			(at 87.63 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3498,7 +3530,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 90.424 0)
+			(at 87.63 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3508,7 +3540,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 86.36 0)
+			(at 87.63 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3519,7 +3551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 86.36 0)
+			(at 87.63 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3530,7 +3562,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 87.63 86.36 0)
+			(at 87.63 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3787,7 +3819,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 114.3 134.62 0)
+		(at 109.22 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3798,7 +3830,7 @@
 		(fields_autoplaced yes)
 		(uuid "36a08a8e-f55d-4bab-85a5-bee3aa6a80f7")
 		(property "Reference" "#PWR05"
-			(at 114.3 140.97 0)
+			(at 109.22 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3809,7 +3841,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 139.7 0)
+			(at 109.22 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3819,7 +3851,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 134.62 0)
+			(at 109.22 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3830,7 +3862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 134.62 0)
+			(at 109.22 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3841,7 +3873,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 114.3 134.62 0)
+			(at 109.22 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4021,6 +4053,83 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
+		(at 85.09 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "540dfd1d-74b4-438f-a730-ca5abe68666b")
+		(property "Reference" "#FLG03"
+			(at 85.09 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 85.09 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 85.09 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66e49684-5a01-4bdb-a138-74a525f9c785")
+		)
+		(instances
+			(project "Smart-Watch-L15-Dock"
+				(path "/090d401f-5b3e-4385-9739-6d042fb55afd"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
 		(at 213.36 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -4042,7 +4151,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 213.36 66.548 0)
+			(at 213.36 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4185,10 +4294,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5f7616ca-592e-4fb3-bd37-0d0435c89948")
 		(property "Reference" "J2"
-			(at 76.2 64.77 0)
+			(at 76.2 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4198,7 +4306,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06"
-			(at 76.2 67.31 0)
+			(at 73.406 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4269,7 +4377,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 114.3 114.3 0)
+		(at 109.22 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4279,7 +4387,7 @@
 		(dnp no)
 		(uuid "69b58492-8316-44f2-a89e-8b30ae979513")
 		(property "Reference" "#PWR06"
-			(at 114.3 118.11 0)
+			(at 109.22 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4290,7 +4398,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 114.3 110.49 0)
+			(at 109.22 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4300,7 +4408,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 114.3 0)
+			(at 109.22 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4311,7 +4419,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 114.3 0)
+			(at 109.22 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4322,7 +4430,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 114.3 114.3 0)
+			(at 109.22 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4339,6 +4447,176 @@
 			(project "Smart-Watch-L15-Dock"
 				(path "/090d401f-5b3e-4385-9739-6d042fb55afd"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "1_I_Syst.inc:USB4125-GF-A")
+		(at 200.66 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6ff10ec3-6dfc-405d-8d06-ad54fa2225ce")
+		(property "Reference" "J1"
+			(at 196.85 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "USB4125-GF-A"
+			(at 194.056 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "1_I_Syst.inc:CONN6_USB4125_GCT"
+			(at 182.626 77.216 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "USB4125-GF-A"
+			(at 183.134 77.216 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B9"
+			(uuid "cf1bbe19-1dfe-46e4-a472-6345c236161b")
+		)
+		(pin "A12"
+			(uuid "ea13a21a-550b-45a8-ab57-15914abe3df4")
+		)
+		(pin "A9"
+			(uuid "48120050-3b09-4e68-a591-4082a6e66cb6")
+		)
+		(pin "B5"
+			(uuid "5820f209-d153-414d-902c-62ca12d95219")
+		)
+		(pin "B12"
+			(uuid "3f71d28d-7a3d-4dd6-b610-6f7c71a87446")
+		)
+		(pin "A5"
+			(uuid "3a8f8a7d-9eda-4fc2-a01a-86ec7344efbc")
+		)
+		(instances
+			(project "Smart-Watch-L15-Dock"
+				(path "/090d401f-5b3e-4385-9739-6d042fb55afd"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 86.36 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "70eb588a-20b9-4199-aa6e-f192a6a89c9d")
+		(property "Reference" "#FLG04"
+			(at 85.725 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 84.582 88.392 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 87.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dd394a62-0b19-4eb0-8106-e75b9ca5c968")
+		)
+		(instances
+			(project "Smart-Watch-L15-Dock"
+				(path "/090d401f-5b3e-4385-9739-6d042fb55afd"
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -4826,101 +5104,8 @@
 		)
 	)
 	(symbol
-		(lib_id "1_I_Syst.inc:USB4125-GF-A")
-		(at 200.66 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ac3c9a51-e91b-4784-861d-289b79c164c7")
-		(property "Reference" "J1"
-			(at 196.85 65.786 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "USB4125-GF-A"
-			(at 193.802 78.994 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "1_I_Syst.inc:CONN6_USB4125_GCT"
-			(at 182.626 77.216 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "USB4125-GF-A"
-			(at 183.134 77.216 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 200.66 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "B5"
-			(uuid "0fba59c2-a00d-4856-8fa9-428a5afa8b0a")
-		)
-		(pin "B9"
-			(uuid "cf6ae69a-5b19-42c0-b789-afe6fb9419ab")
-		)
-		(pin "B12"
-			(uuid "e905faeb-2684-4c7c-a4d0-13297377d3ca")
-		)
-		(pin "A9"
-			(uuid "414f24a4-2926-45c1-adb6-0d91519744f1")
-		)
-		(pin "A5"
-			(uuid "78f89b11-b157-4cc9-987c-a7c86b75b192")
-		)
-		(pin "A12"
-			(uuid "1eeca2a4-9603-47ea-a3c0-00ddeaed8043")
-		)
-		(instances
-			(project "Smart-Watch-L15-Dock"
-				(path "/090d401f-5b3e-4385-9739-6d042fb55afd"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "I_Syst_inc:FTSH-105-01-L-DV-K-TR")
-		(at 130.81 130.81 0)
+		(at 125.73 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4930,7 +5115,7 @@
 		(dnp no)
 		(uuid "e12efc4b-fa20-4e97-bc2e-5b999b758e31")
 		(property "Reference" "P2"
-			(at 121.92 115.316 0)
+			(at 116.84 115.316 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4940,7 +5125,7 @@
 			)
 		)
 		(property "Value" "ARM JTAG/SWD"
-			(at 129.032 134.112 0)
+			(at 123.952 134.112 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4949,8 +5134,8 @@
 				)
 			)
 		)
-		(property "Footprint" "1_I-SYST_inc:CON10_2X5_DUK_FTSH_SAI-M"
-			(at 133.096 135.636 0)
+		(property "Footprint" "1_I_Syst.inc:CON10_2X5_DUK_FTSH_SAI-M"
+			(at 128.016 135.636 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4962,7 +5147,7 @@
 			)
 		)
 		(property "Datasheet" "FTSH-105-01-L-DV-K-TR"
-			(at 134.112 133.604 0)
+			(at 129.032 133.604 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4974,7 +5159,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 130.81 0)
+			(at 125.73 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
