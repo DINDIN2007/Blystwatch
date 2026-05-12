@@ -67,8 +67,8 @@ The system is divided into logical blocks to isolate power, sensing, and process
 ### 3D Renders
 Final physical visualization of the assembled board to be imported in SolidWorks for the design of the Watch's Case.
 
-![3D Render Top](Screenshots/3d_Model_Front.png)
+![3D Render Top](Screenshots/3d_Model_Front.png) <br>
 *Fig 6: 3D Render (Top view) showing the sensor array and screen interface footprint.*
 
-![3D Render Bottom](Screenshots/3d_Model_Bottom.png)
+![3D Render Bottom](Screenshots/3d_Model_Back.png) <br>
 *Fig 7: 3D Render (Bottom view) showing the BlystL15 module and exposed charging/programming test pads.*
